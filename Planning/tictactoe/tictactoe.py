@@ -123,9 +123,9 @@ def minimax(board):
         return None
 
     if player(board) == X:
-        return max_value(board, float("-inf"), float("inf"))[1]
+        return max_value(board)[1]
     else:
-        return min_value(board, float("-inf"), float("inf"))[1]
+        return min_value(board)[1]
 
 def max_value(board):
     """
